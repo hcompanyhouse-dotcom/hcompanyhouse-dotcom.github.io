@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>H컴퍼니하우스 | 시스템행거 맞춤 설계·제작·시공</title>
+<meta name="description" content="H컴퍼니하우스 시스템행거 전문. 드레스룸, 맞춤 행거, 공간별 수납 설계와 제작 및 시공 상담.">
+<meta name="theme-color" content="#14243a">
+<style>
+:root{
+  --navy:#14243a;
+  --gold:#b78a4b;
+  --cream:#f7f5f1;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,'Noto Sans KR',sans-serif;color:#202a35;background:#fff;line-height:1.7}
+header{background:var(--navy);color:white;padding:16px 5%;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{font-weight:800;font-size:21px}
+header a{color:white;text-decoration:none;font-size:13px}
+.hero{background:linear-gradient(135deg,#14243a,#35465a);color:white;text-align:center;padding:65px 20px}
+.hero small{color:#e4c798;letter-spacing:2px}
+.hero h1{font-size:clamp(29px,6vw,49px);line-height:1.35;margin:18px 0}
+.hero p{color:#e4e8ed}
+.btn{display:inline-block;background:var(--gold);color:white;text-decoration:none;border:0;border-radius:9px;padding:15px 25px;font-weight:bold;cursor:pointer}
+.hero .btn{margin-top:20px}
+section{max-width:1050px;margin:auto;padding:55px 20px}
+h2{text-align:center;font-size:27px;margin:0 0 14px}
+.intro{text-align:center;color:#666;margin-bottom:35px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card{border:1px solid #e5e5e5;border-radius:13px;overflow:hidden;background:white}
+.card .visual{height:150px;background:linear-gradient(135deg,#ddd7cc,#a6a49e);display:flex;align-items:center;justify-content:center;font-size:65px}
+.card .info{padding:19px}
+.card h3{margin:0 0 7px}
+.card p{font-size:14px;color:#666;margin:0}
+.soft{background:var(--cream)}
+.soft section{padding-top:55px;padding-bottom:55px}
+form{max-width:700px;margin:auto;background:white;padding:25px;border-radius:15px;box-shadow:0 5px 25px #0000000b}
+label{display:block;font-weight:700;margin:17px 0 6px}
+input,select,textarea{width:100%;padding:13px;border:1px solid #cfd3d8;border-radius:8px;font-size:16px;background:white}
+textarea{min-height:95px;resize:vertical}
+.note{font-size:13px;color:#666}
+form button{width:100%;font-size:17px;margin-top:22px}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:15px;text-align:center}
+.step{padding:23px 12px;border:1px solid #ddd;border-radius:12px}
+.step b{color:var(--gold);font-size:22px}
+.contact{text-align:center}
+.contact a{margin:8px}
+footer{background:#101c2d;color:#d5dce4;text-align:center;padding:32px 15px;font-size:13px}
+footer strong{color:white}
+@media(max-width:600px){
+.hero{padding:48px 18px}
+section{padding:42px 17px}
+form{padding:18px}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">H컴퍼니하우스</div>
+<a href="#estimate">무료 견적 상담</a>
+</header>
+
+<div class="hero">
+<small>H COMPANY HOUSE</small>
+<h1>공간에 맞춘 시스템행거<br>드레스룸 맞춤 설계</h1>
+<p>우리 집 공간에 맞는 수납 구조<br>설계부터 제작·시공 상담까지</p>
+<a class="btn" href="#estimate">맞춤 견적 알아보기</a>
+</div>
+
+<section>
+<h2>H컴퍼니하우스 시스템행거</h2>
+<p class="intro">공간의 크기와 생활 방식에 맞는 수납 구성을 제안합니다.</p>
+<div class="cards">
+<div class="card">
+<div class="visual">▥</div>
+<div class="info">
+<h3>일자형 시스템행거</h3>
+<p>벽면을 따라 효율적으로 구성하는 기본형 수납 시스템입니다.</p>
+</div>
+</div>
+<div class="card">
+<div class="visual">⌞</div>
+<div class="info">
+<h3>ㄱ자형 시스템행거</h3>
+<p>두 벽면과 모서리 공간을 활용하는 드레스룸 구성입니다.</p>
+</div>
+</div>
+<div class="card">
+<div class="visual">⊔</div>
+<div class="info">
+<h3>ㄷ자형 시스템행거</h3>
+<p>세 방향의 벽면을 활용해 수납 공간을 넓히는 방식입니다.</p>
+</div>
+</div>
+<div class="card">
+<div class="visual">▤</div>
+<div class="info">
+<h3>맞춤형 드레스룸</h3>
+<p>선반, 서랍, 옷걸이 공간을 사용 목적에 맞게 조합합니다.</p>
+</div>
+</div>
+</div>
+</section>
+
+<div class="soft">
+<section id="estimate">
+<h2>시스템행거 맞춤 견적</h2>
+<p class="intro">원하는 형태와 크기를 입력하시면 카카오톡 상담으로 연결됩니다.</p>
+
+<form id="quoteForm">
+<label for="region">설치 지역</label>
+<input id="region" placeholder="예: 대구 수성구" required>
+
+<label for="shape">시스템행거 형태</label>
+<select id="shape" required>
+<option value="">형태를 선택하세요</option>
+<option>일자형</option>
+<option>ㄱ자형</option>
+<option>ㄷ자형</option>
+<option>드레스룸 맞춤형</option>
+<option>상담 후 결정</option>
+</select>
+
+<label for="width">가로 길이 (mm)</label>
+<input id="width" type="number" min="1" placeholder="예: 3000">
+
+<label for="depth">깊이 (mm)</label>
+<input id="depth" type="number" min="1" placeholder="예: 500">
+
+<label for="height">높이 (mm)</label>
+<input id="height" type="number" min="1" placeholder="예: 2200">
+
+<p class="note">치수를 모르시면 비워두셔도 됩니다.</p>
+
+<label for="color">선호 색상</label>
+<select id="color">
+<option>화이트</option>
+<option>블랙</option>
+<option>실버</option>
+<option>우드톤</option>
+<option>상담 후 결정</option>
+</select>
+
+<label for="options">추가 옵션</label>
+<select id="options">
+<option>기본 행거 구성</option>
+<option>서랍장 포함</option>
+<option>선반 추가</option>
+<option>서랍장 및 선반 추가</option>
+<option>상담 후 결정</option>
+</select>
+
+<label for="memo">추가 요청 사항</label>
+<textarea id="memo" placeholder="설치 공간, 원하는 구성 등을 입력하세요."></textarea>
+
+<button class="btn" type="submit">견적 내용 복사 후 카카오톡 상담</button>
+<p class="note">버튼을 누르면 견적 내용이 복사되고 카카오톡 상담창으로 이동합니다. 상담창에서 붙여넣어 전송해 주세요.</p>
+</form>
+</section>
+</div>
+
+<section>
+<h2>맞춤 상담 진행 과정</h2>
+<p class="intro">공간 확인부터 시공 상담까지</p>
+<div class="steps">
+<div class="step"><b>01</b><p>설치 공간 확인</p></div>
+<div class="step"><b>02</b><p>형태와 옵션 선택</p></div>
+<div class="step"><b>03</b><p>견적 및 구성 상담</p></div>
+<div class="step"><b>04</b><p>제작·시공 일정 협의</p></div>
+</div>
+</section>
+
+<div class="soft">
+<section class="contact">
+<h2>H컴퍼니하우스 상담 안내</h2>
+<p>시스템행거, 드레스룸, 맞춤 수납 상담</p>
+<p><strong>010-8677-2998</strong></p>
+<a class="btn" href="https://pf.kakao.com/_xnxdINX/chat" target="_blank" rel="noopener">카카오톡 무료 상담</a>
+<a class="btn" href="tel:01086772998">전화 상담</a>
+</section>
+</div>
+
+<footer>
+<strong>H컴퍼니하우스 | H COMPANY HOUSE</strong>
+<p>시스템행거 · 드레스룸 · 맞춤 수납</p>
+<p>상담전화 010-8677-2998</p>
+<p>© 2026 H COMPANY HOUSE</p>
+</footer>
+
+<script>
+document.getElementById('quoteForm').addEventListener('submit',async function(e){
+e.preventDefault();
+const get=id=>document.getElementById(id).value.trim();
+const msg=[
+'[H컴퍼니하우스 시스템행거 견적 문의]',
+'설치 지역: '+get('region'),
+'행거 형태: '+get('shape'),
+'가로: '+(get('width')||'미정')+'mm',
+'깊이: '+(get('depth')||'미정')+'mm',
+'높이: '+(get('height')||'미정')+'mm',
+'색상: '+get('color'),
+'추가 옵션: '+get('options'),
+'요청 사항: '+(get('memo')||'없음')
+].join('\n');
+try{
+await navigator.clipboard.writeText(msg);
+alert('견적 내용이 복사되었습니다. 카카오톡 채팅창에 붙여넣어 전송해 주세요.');
+}catch(err){
+window.prompt('견적 내용을 복사해 주세요.',msg);
+}
+window.open('https://pf.kakao.com/_xnxdINX/chat','_blank');
+});
+</script>
+
+</body>
+</html>
